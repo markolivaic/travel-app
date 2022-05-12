@@ -11,15 +11,25 @@
   .nav-menu {
     display: flex;
     li {
-      padding: 0 1rem;
+      margin: 0 1rem;
+      cursor: pointer;
     }
+  }
+  .logo {
+    cursor: pointer;
   }
   .hamburger {
     display: none;
     padding: 1rem;
+    cursor: pointer;
   }
   .mobile-menu {
     display: none;
+  }
+  .nav-icons {
+    .icon {
+      cursor: pointer;
+    }
   }
 }
 
@@ -60,6 +70,10 @@
       color: black;
       transition: 0.3s;
 
+      .icon {
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
       .mobile-nav {
         margin: 1rem 0;
         li {
@@ -78,7 +92,7 @@
           margin: 2rem 0;
           .icon:hover {
             transform: scale(1.5);
-            transition: 0.3s;
+            transition: 0.5s;
           }
         }
         .menu-icons {

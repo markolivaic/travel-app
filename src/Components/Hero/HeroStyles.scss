@@ -17,4 +17,59 @@
     object-fit: cover;
     z-index: -1;
   }
+  .content {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    .form {
+      display: flex;
+      background-color: #ffffffcc;
+      color: black;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 4px;
+      border-radius: 8px;
+      max-width: 700px;
+      width: 100%;
+      margin: 1rem auto;
+      input[type="text"] {
+        border: transparent;
+        background-color: transparent;
+        width: 400px;
+        font-size: 1.2rem;
+        font-family: "Poppins", sans-serif;
+        margin-left: 0.5rem;
+      }
+      input[type="text"]:focus {
+        outline: none;
+      }
+      .icon {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .hero {
+    .overlay {
+    }
+    #video {
+    }
+    .content {
+      .form {
+        input[type="text"] {
+          max-width: 275px;
+        }
+      }
+    }
+  }
 }

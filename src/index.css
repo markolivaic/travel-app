@@ -48,6 +48,7 @@ button {
   padding: 0.7rem 1.5rem;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 940px) {
