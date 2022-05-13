@@ -11,7 +11,10 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+import { Link } from "react-scroll";
+
 import "./NavbarStyles.scss";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -20,16 +23,26 @@ const Navbar = () => {
   };
 
   return (
-    <div className={nav ? "navbar navbar-bg" : "navbar"}>
+    <div name="home" className={nav ? "navbar navbar-bg" : "navbar"}>
       <div className="logo">
         <h2 className={nav ? "logo dark" : "logo"}>BEACHES.</h2>
       </div>
       <ul className="nav-menu">
-        <li>Home</li>
-        <li>Destinations</li>
-        <li>Travel</li>
-        <li>Book</li>
-        <li>Views</li>
+        <Link to="home">
+          <li>Home</li>
+        </Link>
+        <Link to="destinations">
+          <li>Destinations</li>
+        </Link>
+        <Link to="search">
+          <li>Travel</li>
+        </Link>
+        <Link to="selects">
+          <li>Book</li>
+        </Link>
+        <Link to="carousel">
+          <li>Views</li>
+        </Link>
       </ul>
       <div className="nav-icons">
         <BiSearch className="icon" style={{ marginRight: "1rem" }} />
@@ -45,11 +58,51 @@ const Navbar = () => {
 
       <div className={nav ? "active mobile-menu" : "mobile-menu"}>
         <ul className="mobile-nav">
-          <li>Home</li>
-          <li>Destinations</li>
-          <li>Travel</li>
-          <li>Book</li>
-          <li>Views</li>
+          <Link to="home">
+            <li
+              onClick={() => {
+                setTimeout(handleNav, 500);
+              }}
+            >
+              Home
+            </li>
+          </Link>
+          <Link to="destinations">
+            <li
+              onClick={() => {
+                setTimeout(handleNav, 500);
+              }}
+            >
+              Destinations
+            </li>
+          </Link>
+          <Link to="search">
+            <li
+              onClick={() => {
+                setTimeout(handleNav, 500);
+              }}
+            >
+              Travel
+            </li>
+          </Link>
+          <Link to="selects">
+            <li
+              onClick={() => {
+                setTimeout(handleNav, 500);
+              }}
+            >
+              Book
+            </li>
+          </Link>
+          <Link to="carousel">
+            <li
+              onClick={() => {
+                setTimeout(handleNav, 500);
+              }}
+            >
+              Views
+            </li>
+          </Link>
         </ul>
         <div className="mobile-menu-bottom">
           <div className="menu-icons">
