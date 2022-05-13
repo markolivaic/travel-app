@@ -16,7 +16,10 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    outline: unset;
+    clip-path: inset(0.1px 0px);
   }
+
   .content {
     position: absolute;
     top: 0;

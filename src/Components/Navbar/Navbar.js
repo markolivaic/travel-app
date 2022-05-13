@@ -12,15 +12,12 @@ import {
 } from "react-icons/fa";
 
 import "./NavbarStyles.scss";
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
-
-  console.log(nav);
 
   return (
     <div className={nav ? "navbar navbar-bg" : "navbar"}>
